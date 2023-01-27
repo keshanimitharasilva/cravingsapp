@@ -1,0 +1,299 @@
+/*****************
+Description: 
+This style sheet contains the styles for 
+- Landing Page
+- Regsitration Page
+- Thank you Page
+- Login Page
+********************/ 
+
+/*------------------------------------------------------------------------------
+|                                IMPORT STYLES
+|-----------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+
+
+body{
+    font-size: 0.5em; 
+}
+ 
+/*------------------------------------------------------------------------------
+|                                LANDING PAGE
+|-----------------------------------------------------------------------------*/
+
+/***PAGE STYLES***/
+.landingPage{
+    font-family: Poppins;
+    color:rgb(42, 44, 44);  
+    background: url('../img/backgrounds/landing_bg.png');
+    padding-top: 3em; 
+}
+
+footer{
+    height: 10em; 
+    font-size: 2em; 
+    color:rgb(255, 255, 255); 
+    background-color:rgb(21, 149, 81); 
+    text-align: center; 
+    padding: 2em; 
+}
+
+/***CONTAINER STYLES***/
+.landMainCon{
+    display: grid; 
+    grid-template-rows: 1fr 1.8fr;
+    justify-items: center;
+    padding: 4em; 
+}
+.lanPgCon1{
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    align-items: center; 
+    justify-items: center; 
+    text-align: center;  
+    margin-bottom: 5em; 
+}
+.lanPgCon2{
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    align-items: center; 
+}
+.lanCon1{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+.lanCon2{
+    display: grid; 
+    justify-items: center;
+}
+/***HEADING AND PARAGRAPH STYLES***/
+.landingH1{
+    font-size: 3em; 
+    color: #F08700;  
+}
+
+.logOrReg{
+    font-size: 2em; 
+    color:rgb(255, 255, 255);
+}
+.landingPromo{
+    font-size: 2em; 
+    font-weight: 600; 
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 1em ;
+    box-shadow: -0.125em 0.313em 0.438em 0.188em rgba(0,0,0,0.2);  
+    padding: 3em; 
+    height: 9em;
+    width: 10em; 
+    margin-top: 0.5em;
+    margin-left: 5em; 
+    margin-right: 5em;  
+    color:rgb(255, 255, 255); 
+    text-align: center; 
+}
+
+/***BUTTON STYLES***/
+.aboutUs{
+    font-size: 2em;
+    border-width: 5em; 
+    text-decoration: none; 
+    color:rgb(255, 255, 255); 
+    background-color:#F08700;
+    padding: 0.5em; 
+    border-radius: 0.3em; 
+    box-shadow: -0.125em 0.313em 0.438em 0.188em rgba(0,0,0,0.2); 
+    margin: 1em;  
+}
+.logRegButton{
+    font-size: 2em;
+    border-width: 5em; 
+    text-decoration: none; 
+    color:rgb(255, 255, 255); 
+    background-color:rgb(21, 149, 81); 
+    padding: 0.5em; 
+    border-radius: 0.3em; 
+    box-shadow: -0.125em 0.313em 0.438em 0.188em rgba(0,0,0,0.2); 
+
+}
+a.logRegButton:hover{
+    background-color:rgb(25, 233, 122); 
+}
+/***IMAGE STYLES***/
+#landingLogo{
+    width: 40em;  
+
+}
+.landingPng{
+    height: 5em; 
+    width: 5em; 
+}
+
+/*------------------------------------------------------------------------------
+|                                REGISTRATION PAGE
+|-----------------------------------------------------------------------------*/
+/***PAGE STYLES***/
+.registrationPage{
+    font-family: Poppins;
+    color: white; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-items: center; 
+    align-items: center; 
+    background-image: url("../img/backgrounds/register_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%; 
+    padding: 4em; 
+    padding-bottom: 12em; 
+}
+/***CONTAINER STYLES***/
+.regCon1{
+    display: grid; 
+    justify-items: center;
+    align-items: center; 
+}
+/***FORM STYLES***/
+#registrationForm, #loginForm{
+    font-size: 2em; 
+    background-color:rgba(197, 197, 196, 0.7); 
+    color:rgb(42, 44, 44); 
+    height: 25em; 
+    width: 20em; 
+    padding: 2em; 
+    border-radius: 0.5em; 
+    box-shadow: -0.125em 0.313em 0.438em 0.188em rgba(0,0,0,0.2); 
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center; 
+    margin-top: 2em; 
+}
+#username, #name, #email, .password {
+    font-size: 0.8em;
+    font-family: poppins; 
+    padding: 0.5em;  
+    display: block; 
+    width: 20em;
+    border: none; 
+    border-radius: 0.3em; 
+}
+#submitReg, #submitLog{
+    text-decoration: none; 
+    font-family: poppins; 
+    font-size: 1em; 
+    color:rgb(255, 255, 255); 
+    background-color:rgb(21, 149, 81); 
+    padding: 0.3em; 
+    width: 10em; 
+    border:none; 
+    border-radius: 0.3em; 
+    box-shadow: -0.125em 0.313em 0.438em 0.188em rgba(0,0,0,0.2); 
+}
+/***HEADING AND PARAGRAPH STYLES***/
+#registrationH1{
+    font-size: 3em;  
+}
+.green{
+    color:rgb(21, 149, 81); 
+}
+.passReqList{
+    font-size: 1.5em; 
+    color:rgb(255, 255, 255); 
+    background-color:rgba(0, 0, 0, 0.8); 
+    border-radius: 0.8em; 
+    padding: 1em; 
+    width: 30em; 
+}
+/***IMAGE STYLES***/
+#grandma{
+    height: 65em; 
+    border-radius: 0.8em; 
+    box-shadow: -0.125em 0.313em 0.438em 0.188em rgba(0,0,0,0.2);
+}
+#regPageLogo{
+    margin-bottom: 3em; 
+    height: 15em; 
+}
+
+
+
+/*------------------------------------------------------------------------------
+|                                THANK YOU PAGE
+|-----------------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------------------------
+|                                LOGIN PAGE
+|-----------------------------------------------------------------------------*/
+/***PAGE STYLES***/
+.loginPage{
+    font-family: Poppins;
+    color:rgb(42, 44, 44); 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 4em; 
+    padding-bottom: 7em;
+    background-image: url("../img/backgrounds/login_bg.png"); 
+    background-size: cover;
+}
+
+.loginCon1, .loginCon3{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+/***HEADING AND PARAGRAPH STYLES***/
+#loginH1{ 
+    font-size: 3em; 
+    color:rgb(255, 255, 255); 
+    width: 10em; 
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
+#loginH2{ 
+    font-size: 3em; 
+    color:rgb(255, 255, 255); 
+    text-align: center; 
+    margin-top: 3em;  
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
+/***FORM STYLES***/
+#loginForm{
+    grid-template-rows: 1fr 1fr 0.5fr;
+    height: 15em; 
+}
+/***IMAGE STYLES***/
+#loginPageLogo{
+    height: 15em; 
+    margin-bottom: 5em; 
+}
+#prettyPizza{
+    height: 70em;  
+    border-radius: 0.8em; 
+    box-shadow: -0.125em 0.313em 0.438em 0.188em rgba(0,0,0,0.2);
+}
+.fas{
+    color: #F08700; 
+    font-size: 5em; 
+}
+
+/*------------------------------------------------------------------------------
+|                                ABOUT US
+|-----------------------------------------------------------------------------*/
+.about{
+    padding-left: 15em; 
+    padding-right: 15em; 
+}
+
+.abtBtn{
+    width: 10em; 
+}
+
+.error{
+    color: red; 
+    font-size: 0.8em; 
+}

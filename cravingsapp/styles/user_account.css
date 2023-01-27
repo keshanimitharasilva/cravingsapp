@@ -1,0 +1,697 @@
+/*****************
+Description: 
+This style sheet contains the styles for 
+- User Home Page
+- User Profile Page
+
+
+********************/ 
+
+/*------------------------------------------------------------------------------
+|                                IMPORT STYLES
+|-----------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+
+/*------------------------------------------------------------------------------
+|                                COMMON STYLES
+|-----------------------------------------------------------------------------*/
+body{
+    font-family: Poppins;
+    font-size: 1em; 
+    color:rgb(21, 149, 81); 
+    background-color: rgb(233, 233, 233); 
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none; 
+}
+button{
+    outline: none; 
+    font-family: poppins;
+}
+fieldset{
+    border: none; 
+}
+legend{
+    font-weight: 600; 
+}
+.greenHeading{
+    color:rgb(21, 149, 81); 
+}
+.homePageContainer{
+    display: grid; 
+    grid-template-columns: 0.5fr 5fr 1fr;
+    justify-items: center;
+    align-items:flex-start; 
+    margin: 0; 
+    padding: 0; 
+    bottom :0; 
+    height: 40em; 
+}
+
+main{
+    padding: 2em;
+    padding-top: 4em;  
+    margin-top: 5em; 
+}
+
+/***HEADER STYLES***/
+header{
+    width: 100%;
+    height: 5em; 
+    background-color: white; 
+    display: grid; 
+    grid-template-columns: 0.5fr 1fr 0.5fr 0.5fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+    box-shadow: -0.1em 0.2em 0.4em 0.1em rgba(0,0,0,0.2); 
+    padding: 1em; 
+    position: absolute; 
+}
+.search{
+    background-color:rgb(217, 218, 216);
+    color: white; 
+    border-radius: 0.5em;
+    padding: 0.5em; 
+}
+#searchBar{
+    font-family: Poppins;
+    background-color: rgb(217, 218, 216);
+    color:rgb(42, 44, 44);
+    font-size: 1em; 
+    width: 20em; 
+    border: none; 
+    outline:none; 
+}
+
+.savedRecipesLinkHome a, .profileLinkHome a, .notificationsLinkHome a{
+    color:rgb(21, 149, 81);
+    font-weight: 700; 
+}
+
+.savedRecipesLinkHome a:hover, .notificationsLinkHome a:hover{
+    color:rgb(25, 233, 122); 
+}
+
+.profileLinkHome a{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+    color: white; 
+}
+.profileLinkHome{
+    background-color: rgb(21, 149, 81);
+    padding: 0.1em; 
+    padding-left: 0.8em;
+    padding-right: 0.8em; 
+    border-radius: 0.8em; 
+}
+
+.profileLinkHome:hover{
+    background-color:rgb(25, 233, 122);
+}
+
+.profileLinkHome img{
+    height: 2em; 
+    width: 2em; 
+}
+/***SIDE NAVIGATION STYLES***/
+nav{
+    display: grid;
+    margin: 0; 
+    background-color: rgba(0,0,0,0);
+    margin-top: 15em;
+}
+nav a{
+    color: rgb(21, 149, 81);
+    text-shadow: -0.1em 0.2em 0.4em 0.1em rgba(0,0,0,0.2);
+    padding: 1em;
+}
+nav a:hover{
+    background-color:rgb(217, 218, 216); 
+}
+.navContainer1, .navContainer2{
+    background-color: white; 
+    width: 12em;
+    height: 100%; 
+    margin: 0; 
+}
+.navContainer1{
+    font-size: 0.8em; 
+}
+.navContainer2{
+    background-color:#A7CB79; 
+}
+.navContainer2 nav a{
+    color: white; 
+}
+.navContainer2 nav a:hover{
+    color: #F08700;
+    background-color: #A7CB79; 
+}
+.crvLogo{
+    height: 5em; 
+}
+.create{
+    font-size: 2em; 
+    text-shadow: -0.1em 0.2em 0.4em 0.1em rgba(0,0,0,0.1); 
+}
+
+/*------------------------------------------------------------------------------
+|                                HOME PAGE
+|-----------------------------------------------------------------------------*/
+
+/***MAIN STYLES***/
+.homeUserPost{
+    background-color: white;
+    box-shadow: -0.1em 0.2em 0.4em 0.1em rgba(0,0,0,0.1); 
+    border-radius: 0.8em;
+    width: 40em;  
+    height: 18em;  
+    display: grid; 
+    grid-template-rows: 0.75fr 5fr;
+    align-items: center;
+    padding: 2em; 
+    padding-top: 0.5em; 
+    margin-bottom: 2em; 
+}
+.homeUserPost2{
+    display: grid; 
+    grid-template-columns: 0.5fr 1.2fr 0.5fr;
+    justify-items: center;
+    align-items: center;
+}
+.homePostUsername{
+    font-weight: 700;
+    display: grid; 
+    grid-template-columns: 0.3fr 4fr 0.5fr;
+    align-items: center;
+}
+.recipeName{
+    color:rgb(21, 149, 81); 
+    font-size: 1.5em; 
+    font-weight: bold; 
+    padding: 0.5em; 
+    border-right:0.125em solid rgb(21, 149, 81)
+}
+
+.imageOfRecipe{
+    border-radius: 0.5em; 
+    height: 10em; 
+    width: 10em; 
+}
+
+.recipeDescription{
+    padding: 0.8em; 
+}
+
+.description{
+    font-weight: 600; 
+}
+
+.prepTime, .timePosted{
+    color:rgb(92, 95, 95); 
+    font-weight: 300; 
+    font-size: 0.8em; 
+}
+
+.recipeLink{
+    color:rgb(42, 44, 44); 
+}
+.postProfilePic{
+    height: 2em; 
+    width: 2em; 
+}
+
+.userPostOptions{
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.opBtn{
+    background: none; 
+    border: none; 
+    color:rgb(21, 149, 81); 
+    font-size: 1.5em; 
+    margin-left: 1.5em;
+    margin-top: 1em; 
+}
+.opBtn:hover{
+    color:rgb(25, 233, 122); 
+}
+.opBtn:active{
+    color:#F08700; 
+}
+/*------------------------------------------------------------------------------
+|                                READ RECIPE PAGE
+|-----------------------------------------------------------------------------*/
+
+.readRecipe{
+    width: 50em; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    background-color:rgb(255, 255, 255); 
+    box-shadow: -0.1em 0.2em 0.4em 0.1em rgba(0,0,0,0.1); 
+    border-radius: 0.8em;
+    padding: 2em; 
+}
+.readRecipeName, #savedRec{
+    color:rgb(21, 149, 81); 
+
+}
+.savedRecipeTable{
+    background-color: white;
+    box-shadow: -0.1em 0.2em 0.4em 0.1em rgba(0,0,0,0.1); 
+    border-radius: 0.8em;
+    width: 20em; 
+    padding: 2em; 
+}
+
+.ingredientsTable td, .savedRecipeTable td{
+    border: 0.2em solid rgb(233, 233, 233);   
+    background-color:rgb(233, 233, 233); 
+    border-radius: 0.3em; 
+}
+
+.readRecipePrepTime, .readRecipeBy{
+    color:rgb(92, 95, 95);
+}
+
+.readRecipeOptions{
+    text-align: right;
+}
+.readRecipeOptions button{
+    color:rgb(21, 149, 81); 
+    font-size: 1.5em; 
+    margin: 0.5em; 
+    border: none; 
+    background: none; 
+}
+
+.readRecipeInstructions{
+    color:rgb(42, 44, 44); 
+}
+
+/*------------------------------------------------------------------------------
+|                                SAVED RECIPE'S PAGE
+|-----------------------------------------------------------------------------*/
+.savedRecipeTable{
+    width: 50em;
+}
+.savedRecipeTable td{
+    padding: 1em; 
+}
+.savedRecipeTable td{
+    border: 5px solid white; 
+}
+.recipeDelete, .recipeEdit{ 
+    color:rgb(21, 149, 81); 
+    background: none; 
+    border: none; 
+    font-size: 1.5em; 
+    text-align: center;
+}
+.recipeDelete:hover, .recipeEdit:hover{
+    color:rgb(25, 233, 122); 
+}
+.recipeDelete:active, .recipeEdit:active{
+    color:#F08700;  
+}
+#recipeListButtons{
+    background-color:rgb(255, 255, 255); 
+}
+/*------------------------------------------------------------------------------
+|                                CREATE A RECIPE PAGE
+|-----------------------------------------------------------------------------*/
+
+#createRecipeForm{
+    background-color: white;
+    box-shadow: -0.1em 0.2em 0.4em 0.1em rgba(0,0,0,0.1); 
+    border-radius: 0.8em;
+    width: 50em; 
+    padding: 2em;
+    padding-top: 1em;  
+    
+}
+
+#recipeName, #prepTime, .ingredients, #directions{
+    font-size: 0.8em;
+    font-family: poppins; 
+    padding: 0.5em;  
+    border: none; 
+    border-radius: 0.3em; 
+    margin: 0.8em; 
+    margin-left: 0;
+    margin-bottom: 2em; 
+    background-color:rgb(206, 204, 204);
+}
+
+#prepTime{
+    width: 5em; 
+}
+
+.ingredients{
+    width: 30em; 
+    margin-left: 0;
+    margin-bottom: 1em;  
+}
+
+#recipeName{
+    width: 40em; 
+}
+
+#directions{
+    width: 100%; 
+    height: 10em; 
+}
+
+#recipeSubmit, #addMoreIng {
+    text-decoration: none; 
+    font-family: poppins; 
+    font-size: 1em; 
+    color:rgb(255, 255, 255); 
+    background-color:rgb(21, 149, 81); 
+    padding: 0.3em; 
+    width: 10em; 
+    border:none; 
+    border-radius: 0.3em; 
+    box-shadow: -0.125em 0.313em 0.438em 0.188em rgba(0,0,0,0.2);
+}
+#addMoreIng{
+    background-color:#F08700; 
+    font-size: 0.7em; 
+    margin-bottom: 2em; 
+    width: 15em; 
+}
+#ingRemove{
+    border: none; 
+    border-radius: 0.3em; 
+    font-family: poppins; 
+    font-size: 0.5em; 
+    background-color: rgb(105, 105, 105);
+    color:rgb(255, 255, 255); 
+}
+.createRecipeFieldset{
+    margin-bottom: 2em; 
+    margin-top: 1em; 
+    color:rgb(42, 44, 44);  
+}
+
+.createRecipeFieldset input[type="radio"]{
+    height: 2em;
+    width: 2em; 
+}
+
+/*------------------------------------------------------------------------------
+|                                SAVE AND POST RECIPE PAGE
+|-----------------------------------------------------------------------------*/
+#postRecipe{
+    text-decoration: none; 
+    font-family: poppins; 
+    font-size: 1em; 
+    color:rgb(255, 255, 255); 
+    background-color:rgb(21, 149, 81); 
+    padding: 0.3em; 
+    width: 10em; 
+    border:none; 
+    border-radius: 0.3em; 
+    box-shadow: -0.125em 0.313em 0.438em 0.188em rgba(0,0,0,0.2);
+}
+
+#postRecipe:hover{
+    background-color:rgb(25, 233, 122); 
+}
+
+
+
+/*------------------------------------------------------------------------------
+|                                ACCOUNT SETTINGS
+|-----------------------------------------------------------------------------*/
+.settingsDiv{
+    width: 50em; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    background-color:rgb(255, 255, 255); 
+    box-shadow: -0.1em 0.2em 0.4em 0.1em rgba(0,0,0,0.1); 
+    border-radius: 0.8em;
+    padding: 2em; 
+}
+#settingsTable{
+    width: 100%; 
+}
+#settingsTable td{
+    border: 0.2em solid rgb(233, 233, 233);   
+    background-color:rgb(233, 233, 233); 
+    border-radius: 0.3em;  
+    padding: 0.5em; 
+}
+.settd1{
+    width: 8em; 
+    background-color:rgb(105, 105, 105); 
+    font-weight: 600; 
+}
+
+.settd2{
+    width: 5em; 
+}
+
+.edit{
+    border: none; 
+    background-color:rgb(21, 149, 81); 
+    border-radius: 0.2em; 
+    font-size: 1em; 
+    color:rgb(255, 255, 255); 
+    width: 4em; 
+}
+
+.edit:hover{
+    background-color:rgb(25, 233, 122);  
+}
+
+.edit:active{
+    background-color: #F08700;
+}
+
+#newUsername, #reEnterPass1, #newEmail, #reEnterPass2, #newPass, #confirmNewPass, #newName{
+    display: block;
+    border: none; 
+    border-radius: 0.2em; 
+    font-size: 1em; 
+    padding: 0.3em; 
+    font-family: poppins;
+    margin-bottom: 0.8em; 
+    background-color:rgb(221, 221, 221); 
+    outline: none; 
+}
+.settingsSubmit, .cancelBtn{
+    display: block; 
+    background-color:rgb(21, 149, 81); 
+    color:rgb(255, 255, 255); 
+    font-size: 1em; 
+    width: 5em; 
+    border: none; 
+    border-radius: 0.2em; 
+    outline: none; 
+    font-family: Poppins;
+    margin-top: 1em; 
+}
+
+.cancelBtn{
+    background-color:rgb(92, 95, 95); 
+}
+.settingsSubmit:hover{
+    background-color:rgb(25, 233, 122); 
+}
+.settingsSubmit:active, .cancelBtn:active{
+    background-color: #F08700; 
+}
+
+.settingsDiv input[type="radio"]{
+    height: 1em; 
+    width: 1em; 
+}
+
+/*------------------------------------------------------------------------------
+|                                USER PROFILE
+|-----------------------------------------------------------------------------*/
+#userProfileDiv{
+    width: 55em; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    background-color:rgb(255, 255, 255); 
+    box-shadow: -0.1em 0.2em 0.4em 0.1em rgba(0,0,0,0.1); 
+    border-radius: 0.8em;
+    padding: 2em; 
+}
+
+.profileBtns{
+    border: none; 
+    background-color:rgb(21, 149, 81); 
+    border-radius: 0.2em; 
+    font-size: 1em; 
+    color:rgb(255, 255, 255); 
+    width: 8em; 
+    padding: 0.2em; 
+    margin-bottom: 3em; 
+}
+.profileBtns:hover{
+    background-color:rgb(25, 233, 122);  
+}
+
+.profileBtns:active{
+    background-color: #F08700;
+}
+
+.profileLinkHome{
+    left:inherit;
+}
+
+/*------------------------------------------------------------------------------
+|                                OTHER CLASSES
+|-----------------------------------------------------------------------------*/
+
+.hidden{
+    display: none; 
+}
+
+
+.error{
+    color: rgb(255, 0, 0);
+    font-size: 0.5em; 
+}
+
+.bold{
+    font-weight: 700; 
+}
+
+/*------------------------------------------------------------------------------
+|                                Notifications css
+|-----------------------------------------------------------------------------*/
+
+.icon {
+	cursor: pointer;
+	margin-right: 50px;
+	line-height: 60px;
+}
+.icon span {
+	background: #f00;
+	padding: 7px;
+	border-radius: 50%;
+	color: #fff;
+	vertical-align: top;
+	margin-left: -25px;
+}
+.icon img {
+	display: inline-block;
+	width: 40px;
+	margin-top: 20px;
+}
+.icon:hover {
+	opacity: .7;
+}
+
+.logo {
+	flex: 1;
+	margin-left: 50px;
+	color: #eee;
+	font-size: 20px;
+	font-family: monospace;
+}
+
+.notifi-box {
+	width: 650px;
+    height: 850px;
+	position: absolute;
+	top: 110px;
+	left: 2050px;
+	transition: 1s opacity, 250ms height;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: white;
+}
+.notifi-box h2 {
+	font-size: 14px;
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+	color: #999;
+}
+.notifi-box h2 span {
+	color: #f00;
+}
+.notifi-item {
+	display: flex;
+	border-bottom: 1px solid #eee;
+	padding: 15px 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.notifi-item:hover {
+	background-color: #eee;
+}
+.notifi-item img {
+	display: block;
+	width: 90px;
+	margin-right: 40px;
+	border-radius: 50%;
+}
+.notifi-item .text h4 {
+	color: #777;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.notifi-item .text p {
+	color: #aaa;
+	font-size: 20px;
+}
+
+
+    /***********************************************************************************/
+    /*                                  Keyword tags                                     */
+    /***********************************************************************************/
+ 
+    .tag-container {
+        border-radius: 3px;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 6px;
+      }
+      .tag-container .tag {
+        height: 30px;
+        margin: 5px;
+        padding: 5px 6px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background: #eee;
+        display: flex;
+        align-items: center;
+        color: #333;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 1px 1px #fff;
+        cursor: default;
+      }
+      .tag i {
+        font-size: 16px;
+        color: #666;
+        margin-left: 5px;
+      }
+      .tag-container input {
+        padding: 5px;
+        font-size: 16px;
+        border: 0;
+        outline: none;
+        font-family: 'Rubik';
+        color: #333;
+        flex: 1;
+      }
